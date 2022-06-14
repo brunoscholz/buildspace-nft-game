@@ -23,7 +23,18 @@ module.exports = {
       accounts: privateKeys.split(','),
     },
     rinkeby: {
+      chainId: 5,
       url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
+      accounts: privateKeys.split(','),
+    },
+    goerli: {
+      chainId: 4,
+      url: `https://eth-goerli.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
+      accounts: privateKeys.split(','),
+    },
+    mainnet: {
+      chainId: 1,
+      url: process.env.ALCHEMY_API_KEY,
       accounts: privateKeys.split(','),
     },
   },
