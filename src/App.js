@@ -145,8 +145,8 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">⚔️ Capitol Slayer ⚔️</p>
-          <p className="sub-text">Team up to protect the Metaverse!</p>
+          <p className="header gradient-text">⚔️ Capitol Defenders ⚔️</p>
+          <p className="sub-text">Team up to protect the Capitol!</p>
           {renderContent()}
         </div>
         <div className="footer-container">
