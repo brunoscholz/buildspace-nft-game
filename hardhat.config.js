@@ -18,6 +18,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.1",
   networks: {
+    development: {
+      url: 'http://127.0.0.1:7545',
+      accounts: privateKeys.split(','),
+    },
     rinkeby: {
       url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
       accounts: privateKeys.split(','),
