@@ -1,2 +1,12 @@
 node_modules
 .DS_STORE
+.env
+coverage
+coverage.json
+typechain
+tmp
+
+#Hardhat files
+cache
+artifacts
+hardhat.config.js
