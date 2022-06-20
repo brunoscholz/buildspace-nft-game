@@ -10,6 +10,8 @@ Nice thing about buildspace is wining these awesome NFT's for each project you f
 
 ![](public/nft-game.gif)
 
+You can check it at [OpenSea](https://opensea.io/assets/matic/0x3CD266509D127d0Eac42f4474F57D0526804b44e/19973?force_update=true) as well.
+
 ## Game
 
 You mint your character's NFT based on three pre-defined template characters. Then you wait for the monster to appear and attack!
