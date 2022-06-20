@@ -8,7 +8,7 @@ It uses hardhat and react.
 
 Nice thing about buildspace is wining these awesome NFT's for each project you finish:
 
-https://github.com/brunoscholz/buildspace-nft-game/blob/master/public/nft-game.mp4
+![](public/nft-game.gif)
 
 ## Game
 
