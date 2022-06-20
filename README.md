@@ -1,15 +1,42 @@
-# buildspace NFT Game Project
+# Buildspace NFT Game Project
 
-### **Welcome 👋**
-To get started with this course, clone this repo and follow these commands:
+This project is the result of buildspace's [Create your own mini turn-based NFT browser game](https://buildspace.so/p/create-turn-based-nft-game).
 
-1. Run `npm install` at the root of your directory
-2. Run `npm run start` to start the project
-3. Start coding!
+It uses hardhat and react.
 
-### What is the `.vscode` Folder?
-If you use VSCode to build your app, we included a list of suggested extensions that will help you build this project! Once you open this project in VSCode, you will see a popup asking if you want to download the recommended extensions :).
+## Game
+
+You mint your character's NFT based on three pre-defined template characters. Then you wait for the monster to appear and attack!
+
+But be careful! The monster's attacks are way more powerful so you need a lot of friends to defeat the terrible monster.
+
+You must have the [Metamask extension](https://metamask.io/download/) on your browser.
+Connect to the Rinkeby testnet and have some ([fake ether](https://faucets.chain.link/rinkeby)) to play.
+
+## Live demo
+
+[Capitol Defenders](https://capitol-defenders.herokuapp.com/)
+
+## Development
+
+```
+$ git clone https://github.com/brunoscholz/buildspace-nft-game.git
+```
+
+Create a .env file and place the following variables:
+
+```
+PRIVATE_KEYS="..."
+ALCHEMY_MUMBAI_API_KEY=...
+```
+
+PRIVATE_KEYS is the private key to the account you are testing with. You can get this on metamask account details -> expose private key. This will be used by hardhat to deploy the contract for the NFT-ENS.
+
+ALCHEMY_MUMBAI_API_KEY is the secret key of your app. You can create one [here](https://www.alchemy.com/).
 
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/courses/CO5cc2751b-e878-41c4-99fa-a614dc910ee9) and link your Discord account so you can get access to helpful channels teaching assistants, and your instructor!
+```
+$ npm install && npm run start
+```
+
+Go to [localhost:3000](http://localhost:3000)
