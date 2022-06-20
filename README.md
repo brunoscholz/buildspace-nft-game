@@ -4,6 +4,12 @@ This project is the result of buildspace's [Create your own mini turn-based NFT 
 
 It uses hardhat and react.
 
+## NFT
+
+Nice thing about buildspace is wining these awesome NFT's for each project you finish:
+
+https://github.com/brunoscholz/buildspace-nft-game/blob/master/public/nft-game.mp4
+
 ## Game
 
 You mint your character's NFT based on three pre-defined template characters. Then you wait for the monster to appear and attack!
