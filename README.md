@@ -20,23 +20,42 @@ Connect to the Rinkeby testnet and have some ([fake ether](https://faucets.chain
 ## Development
 
 ```
-$ git clone https://github.com/brunoscholz/buildspace-nft-game.git
+$ git clone https://github.com/brunoscholz/buildspace-nft-game.git ./epic-game
+
+$ cd epic-game
 ```
 
 Create a .env file and place the following variables:
 
 ```
 PRIVATE_KEYS="..."
-ALCHEMY_MUMBAI_API_KEY=...
+ALCHEMY_API_KEY=...
 ```
 
-PRIVATE_KEYS is the private key to the account you are testing with. You can get this on metamask account details -> expose private key. This will be used by hardhat to deploy the contract for the NFT-ENS.
+PRIVATE_KEYS is the private key (it can be a comma separated string) to the account you are testing with. You can get this on metamask account details -> expose private key. This will be used by hardhat to deploy the game contract.
 
-ALCHEMY_MUMBAI_API_KEY is the secret key of your app. You can create one [here](https://www.alchemy.com/).
+ALCHEMY_API_KEY is the secret key of your app. You can create one [here](https://www.alchemy.com/).
 
+
+#### Install dependencies
+```
+$ npm install
+```
+
+#### Compile
+
+You need to compile the solidity contracts.
+After compiling, you need to copy the abi to the react root folder:
 
 ```
-$ npm install && npm run start
+$ npx hardhat compile
+cp artifacts/contracts/MyEpicGame.sol/MyEpicGame.json src/utils/MyEpicGame.json
+```
+
+It's ready.
+
+```
+$ npm run start
 ```
 
 Go to [localhost:3000](http://localhost:3000)
